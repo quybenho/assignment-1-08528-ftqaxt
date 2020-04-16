@@ -1,16 +1,15 @@
-<div style="    background-color: white !important;">
-<div class="container" >
-	<div style="padding-top: 40px;">
+  <div class="container"><div style="padding-top: 40px;">
 		<nav aria-label="breadcrumb">
 			<ol class="breadcrumb">
 				<li class="breadcrumb-item"><a routerLink="/home" style="  text-decoration: none;color: black;font-weight:bold;">HOME</a></li>
 				<li class="breadcrumb-item active" aria-current="page">PRODUCT</li>
 			</ol>
 		</nav>
-	</div>
-	<div class="row" style="margin-top: 100px;" >
+	</div></div>
 
-		<div ngClass="col-lg-4 col-md-6 mb-4" *ngFor="let product of products">
+	<div class="row" style="margin-top: 50px;padding-right: 20px;padding-left: 20px;" >
+
+		<div ngClass="col-lg-4 col-md-6 mb-4" *ngFor="let product of products" style="" >
 			<div class="card h-100" >
 				<a><img class="card-img-top" routerLink="/product/{{product.id}}" [src]="product.image" alt=""></a>
 					<div class="card-body">
@@ -34,6 +33,3 @@
 			</div>
 		</div>
 	</div>
-</div>
-
-</div>
