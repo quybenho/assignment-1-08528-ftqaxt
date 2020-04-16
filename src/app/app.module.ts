@@ -19,9 +19,11 @@ import { ProductContactComponent } from './product-contact/product-contact.compo
 import { ProductSliderComponent } from './product-slider/product-slider.component';
 import { AdminComponent } from './admin/admin.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { FotterComponent } from './fotter/fotter.component';
+import { HeaderComponent } from './header/header.component';
 @NgModule({
   imports: [BrowserModule, FormsModule, HttpClientModule, AppRoutingModule, NgbModule],
-  declarations: [AppComponent, HelloComponent, HomeComponent, ProductListComponent, ProductNewsComponent, ProductDetailComponent, ProductManagerComponent, ProductAddComponent, ProductEditComponent, NotFoundComponent, ProductContactComponent, ProductSliderComponent, AdminComponent, DashboardComponent],
+  declarations: [AppComponent, HelloComponent, HomeComponent, ProductListComponent, ProductNewsComponent, ProductDetailComponent, ProductManagerComponent, ProductAddComponent, ProductEditComponent, NotFoundComponent, ProductContactComponent, ProductSliderComponent, AdminComponent, DashboardComponent, FotterComponent, HeaderComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
