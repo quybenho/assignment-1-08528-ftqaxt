@@ -11,12 +11,6 @@ import { NotFoundComponent } from "./not-found/not-found.component";
 import { ProductContactComponent } from "./product-contact/product-contact.component";
 import { AdminComponent } from "./admin/admin.component";
 import { DashboardComponent } from "./dashboard/dashboard.component";
-
-
-
-
-
-
 const routes: Routes = [
   { path: "", redirectTo: "home", pathMatch: "full" },
   { path: "home", component: HomeComponent },
