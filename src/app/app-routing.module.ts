@@ -9,7 +9,7 @@ import { ProductAddComponent } from "./product-add/product-add.component";
 import { ProductEditComponent } from "./product-edit/product-edit.component";
 import { NotFoundComponent } from "./not-found/not-found.component";
 import { ProductContactComponent } from "./product-contact/product-contact.component";
-import { ProductSliderComponent } from "./product-slider/product-slider.component";
+
 
 // import ProductManager from  './product-manager/product-manager.component';
 
@@ -22,7 +22,7 @@ const routes: Routes = [
   { path: "product-manager", component: ProductManagerComponent },
   { path: "product-add", component: ProductAddComponent },
   { path: "product-contact", component: ProductContactComponent },
-  { path: "slide", component: ProductSliderComponent },
+ 
   { path: "product/:productID", component: ProductDetailComponent },
   { path: "product/edit/:productID", component: ProductEditComponent },
   { path: "news", component: ProductNewsComponent },
