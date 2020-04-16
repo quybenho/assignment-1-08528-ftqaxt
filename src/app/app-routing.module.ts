@@ -13,27 +13,27 @@ import { AdminComponent } from "./admin/admin.component";
 import { DashboardComponent } from "./dashboard/dashboard.component";
 
 
-// import ProductManager from  './product-manager/product-manager.component';
+
 
 
 
 const routes: Routes = [
   { path: "", redirectTo: "home", pathMatch: "full" },
   { path: "home", component: HomeComponent },
-  { path: "product-list", component: ProductListComponent },
-  { path: "product-manager", component: ProductManagerComponent },
-  { path: "product-add", component: ProductAddComponent },
-  { path: "product-contact", component: ProductContactComponent },
-  { path: "product/:productID", component: ProductDetailComponent },
-  { path: "product/edit/:productID", component: ProductEditComponent },
-  { path: "news", component: ProductNewsComponent },
-  { path: "**", component: NotFoundComponent },
+  // { path: "product-list", component: ProductListComponent },
+  // { path: "product-manager", component: ProductManagerComponent },
+  // { path: "product-add", component: ProductAddComponent },
+  // { path: "product-contact", component: ProductContactComponent },
+  // { path: "product/:productID", component: ProductDetailComponent },
+  // { path: "product/edit/:productID", component: ProductEditComponent },
+  // { path: "news", component: ProductNewsComponent },
+  // { path: "**", component: NotFoundComponent },
 
   {path: 'admin', component: AdminComponent,
     children: [
-      {path : '' , redirectTo: DashboardComponent},
-      {path : 'dashboard' , component: DashboardComponent},
-      {path : 'product-manager',component:  ProductManagerComponent}
+      {path : "" , redirectTo: "dashboard", pathMatch: "full" },
+      {path : "dashboard" , component: DashboardComponent},
+      {path : "manager",component:  ProductManagerComponent}
     ]
   }
 
