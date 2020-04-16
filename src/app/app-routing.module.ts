@@ -21,7 +21,7 @@ const routes: Routes = [
   // { path: "product/:productID", component: ProductDetailComponent },
   // { path: "product/edit/:productID", component: ProductEditComponent },
   { path: "news", component: ProductNewsComponent },
-  { path: "**", component: NotFoundComponent },
+  // { path: "**", component: NotFoundComponent },
 
   {path: "admin", component: AdminComponent,
     children: [

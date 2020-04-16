@@ -30,6 +30,8 @@
               "src/css/index.css",
               "src/css/backtop.css",
                "src/css/footer.css",
+                 "src/css/admin.css",
+                   
               "src/css/main.css",
               "src/css/util.css",
               "src/css/detail.css",
