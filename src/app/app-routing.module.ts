@@ -29,7 +29,7 @@ const routes: Routes = [
   // { path: "news", component: ProductNewsComponent },
   // { path: "**", component: NotFoundComponent },
 
-  {path: 'admin', component: AdminComponent,
+  {path: "admin", component: AdminComponent,
     children: [
       {path : "" , redirectTo: "dashboard", pathMatch: "full" },
       {path : "dashboard" , component: DashboardComponent},
