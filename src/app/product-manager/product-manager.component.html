@@ -1,0 +1,47 @@
+
+<div class="row" style="margin:25px 0px 0px 0px; " >
+  
+
+	<button type="button" class="btn btn-secondary btn-lg" routerLink="/product-add"   style="margin-left: 1285px;margin-bottom:20px;">Thêm Sản Phẩm</button>
+
+	<table class="table table-striped" style="margin-left:50px;margin-right:50px;">
+    
+		<thead class="thead-dark">
+			<tr>
+				<th scope="col">IMAGES</th>
+				<th scope="col">NAME</th>
+				<th scope="col">PRICE</th>
+				<th scope="col">FULETYPE</th>
+				<th scope="col">DESCRIPTION</th>
+				<th scope="col">DELETE</th>
+				<th scope="col">EDIT</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr *ngFor="let product of products | slice: (page-1) * pageSize : (page-1) * pageSize + pageSize">
+
+				<td><img width="2500px" height="300px" src="{{product.image}}" alt=""></td>
+				<td>{{product.name  }}
+          <ngb-rating [(rate)]="currentRate"></ngb-rating>
+<hr>
+<pre>Rate: <b>{{currentRate}}</b></pre>
+        </td>
+				<td>{{product.price}}</td>
+				<td>{{product.fueltype ? 'xăng': 'petrol'}}</td>
+				<td>{{product.desc}}</td>
+				<td><button type="button" class="btn btn-secondary btn-lg" (click)="removeProduct(product.id)">Delete</button>
+				</td>
+				<td><button type="button" class="btn btn-secondary btn-lg" style="padding-right: 40px;" routerLink="/product/edit/{{product.id}}">  Edit</button>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+  
+</div>
+<div class="container" style="margin-left: 680px;margin-top: 25px;">
+<ngb-pagination   [(page)]="page" [pageSize]="pageSize" [collectionSize]="products.length" ></ngb-pagination>
+
+</div>
+
+
+

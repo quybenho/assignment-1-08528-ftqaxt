@@ -1,0 +1,18 @@
+<div class="container" style="border: 2px solid black; padding: 20px 200px 10px 200px; ">
+	<h2>Thêm Sản Phẩm</h2>
+	<div class="form-group">
+		<label for="">  {{address}}</label>
+		<label for="" style="padding: 10px 0 5px 0;">Tên Xe:</label>
+		<input type="text" name="name" class="form-control"placeholder="Product Name" [(ngModel)]="product.name">
+		<label for="" style="padding: 10px 0 5px 0;">Giá Tiền:</label>
+		<input type="text" name="price" class="form-control"placeholder="Price" [(ngModel)]="product.price">
+		<label for="" style="padding: 10px 0 5px 0;">Ảnh:</label>
+		<input type="text" name="image" class="form-control"placeholder="image" [(ngModel)]="product.image">
+		<label for="" style="padding: 10px 0 5px 0;">Desc:</label>
+		<input type="text" name="desc" class="form-control"placeholder="desc" [(ngModel)]="product.desc">
+		<label for="" style="padding: 10px 0 5px 0;">Sử Dụng Nhiên Liệu:</label>
+		<input type="text" name="fueltype" class="form-control"placeholder="fueltype" [(ngModel)]="product.fueltype">
+  </div>
+		<button type="button" (click)="addProduct()" class="btn btn-secondary btn-lg btn-block"> Xác Nhận </button>
+
+	</div>

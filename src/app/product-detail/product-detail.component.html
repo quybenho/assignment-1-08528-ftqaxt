@@ -1,0 +1,40 @@
+<div class="container" style="margin-top: 50px;padding-bottom:100px;">
+	<div class="card">
+		<div class="container-fliud">
+			<div class="wrapper row">
+				<div class="preview col-md-6">
+          <img src="{{product.image}}" style="with:500px;height:400px;" alt="" class="img-fluid">
+				</div>
+				<div class="details col-md-6">
+					<h3 class="product-title">{{product.name}}</h3>
+					<div class="rating">
+						<div class="stars"> <span class="fa fa-star checked"></span>
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star"></span> <span class="fa fa-star"></span>
+						</div> <span class="review-no">123 đánh giá</span>
+					</div>
+					<p class="product-description">{{product.desc}}</p>
+					<h4 class="price">Giá bán: {{product.price}}</h4>
+          <p class="fueltype">nhiên liệu : {{product.fueltype ? 'xăng ': 'petrol'}}
+						
+					</p>
+					<p class="vote"><strong>91%</strong> of người mua hài lòng với sản phẩm này
+						<strong>(87 bình chọn)</strong>
+					</p>
+				
+					<h5 class="colors">Màu:
+						<span class="color orange not-available" data-toggle="tooltip" title="Not In store"></span>
+						<span class="color green"></span> <span class="color blue"></span>
+					</h5>
+					<div class="action"> <a href="#" target="_blank" style="margin-top: 30px;">
+							<button class="btn btn-primary " type="button" style="margin-top: 30px;">MUA NGAY</button>
+						</a> <a href="" target="_blank">
+							<button class="like btn btn-default" style="margin-left: 30px;margin-top: 30px;"  type="button"><span class="fa fa-heart"></span></button>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,17 @@
+.title{text-align: center; margin-top: 50px; font-size: 25px; font-weight: bold;}
+.box{width: 1200px; margin-top: 30px; margin-left: 10px;}
+.box img{width: 350px; height: 180px;float: left; margin-right: 20px; background-color: #eeeeee;}
+.box img:hover{transform: scale(1.2); transition: 0.5s}
+.scar{margin-top: 260px; }
+.box-1{width: 1200px; margin-top: 30px; margin-left: 10px;}
+.box-1 img{width: 350px; height: 180px;float: left; margin-right: 20px; background-color: #eeeeee;}
+.box-1 img:hover{transform: scale(1.2); transition: 0.5s}
+.box-2{width: 1200px; margin-top: 230px; margin-left: 10px;}
+.box-2 img{width: 350px; height: 180px;float: left; margin-right: 20px; background-color: #eeeeee;}
+.box-2 img:hover{transform: scale(1.2); transition: 0.5s}
+.banner1{position: relative; margin-bottom: 30px; margin-left: 2px; margin-top: 450px;}
+.banner1 .buy{position: absolute; left: 100px; top: 100px; color: #fff;}
+.buy p{padding: 20px 0;}
+.buy .mua{padding-top: 50px;}
+.mua a{transition-duration: 0.5s; border: 1px solid #fff; color: #fff; padding: 10px 30px; border-radius: 20px; width: 200px; text-align: center; text-decoration: none;}
+.mua a:hover{background-color: #fff; color: #000;}

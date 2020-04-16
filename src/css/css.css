@@ -1,0 +1,14 @@
+.left{
+    width: 800px;
+    float: left;
+}
+.right{
+    width: 300px;
+    float: left;
+}
+.content{
+    margin: 3px;
+}
+footer{
+clear: both;
+}
