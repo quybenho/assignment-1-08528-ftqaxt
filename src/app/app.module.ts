@@ -18,9 +18,10 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { ProductContactComponent } from './product-contact/product-contact.component';
 import { ProductSliderComponent } from './product-slider/product-slider.component';
 import { AdminComponent } from './admin/admin.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 @NgModule({
   imports: [BrowserModule, FormsModule, HttpClientModule, AppRoutingModule, NgbModule],
-  declarations: [AppComponent, HelloComponent, HomeComponent, ProductListComponent, ProductNewsComponent, ProductDetailComponent, ProductManagerComponent, ProductAddComponent, ProductEditComponent, NotFoundComponent, ProductContactComponent, ProductSliderComponent, AdminComponent],
+  declarations: [AppComponent, HelloComponent, HomeComponent, ProductListComponent, ProductNewsComponent, ProductDetailComponent, ProductManagerComponent, ProductAddComponent, ProductEditComponent, NotFoundComponent, ProductContactComponent, ProductSliderComponent, AdminComponent, DashboardComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
