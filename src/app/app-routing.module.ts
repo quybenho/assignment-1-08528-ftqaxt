@@ -14,14 +14,14 @@ import { DashboardComponent } from "./dashboard/dashboard.component";
 const routes: Routes = [
   { path: "", redirectTo: "home", pathMatch: "full" },
   { path: "home", component: HomeComponent },
-  // { path: "product-list", component: ProductListComponent },
+  { path: "product-list", component: ProductListComponent },
   // { path: "product-manager", component: ProductManagerComponent },
   // { path: "product-add", component: ProductAddComponent },
-  // { path: "product-contact", component: ProductContactComponent },
+  { path: "product-contact", component: ProductContactComponent },
   // { path: "product/:productID", component: ProductDetailComponent },
   // { path: "product/edit/:productID", component: ProductEditComponent },
-  // { path: "news", component: ProductNewsComponent },
-  // { path: "**", component: NotFoundComponent },
+  { path: "news", component: ProductNewsComponent },
+  { path: "**", component: NotFoundComponent },
 
   {path: "admin", component: AdminComponent,
     children: [
