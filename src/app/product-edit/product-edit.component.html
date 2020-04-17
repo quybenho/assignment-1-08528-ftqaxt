@@ -1,7 +1,16 @@
-<div class="container" style="border: 1px solid black; padding: 20px 200px 10px 200px; " >
-	
-		
-		<h2>Chỉnh Sửa Sản Phẩm</h2>
+<div class="container" style=" margin: 30px 1000px 0px 5px;">
+	<div class="container">
+		<div>
+
+			<nav aria-label="breadcrumb">
+				<ol class="breadcrumb">
+					<li class="breadcrumb-item"><a routerLink="/home"
+							style="  text-decoration: none;color: black;font-weight:bold;">CHỈNH SỬA CHI TIẾT</a></li>
+					<!-- <li class="breadcrumb-item active" aria-current="page">NEWS BLOG</li> -->
+				</ol>
+			</nav>
+
+		</div>
 		<div class="form-group">
 			<label for="">  {{address}}</label>
 			<label for="" style="padding: 10px 0 5px 0;">Tên Xe:</label>
@@ -9,14 +18,14 @@
 			<label for="" style="padding: 10px 0 5px 0;">Giá Tiền:</label>
 			<input type="text" name="price" class="form-control"placeholder="Price" [(ngModel)]="product.price">
 			<label for="" style="padding: 10px 0 5px 0;">Ảnh:</label>
-			<input type="text" name="image" class="form-control"placeholder="avatar" [(ngModel)]="product.image">
+			<input type="text" name="image" class="form-control"placeholder="image" [(ngModel)]="product.image">
 			<label for="" style="padding: 10px 0 5px 0;">Desc:</label>
 			<input type="text" name="desc" class="form-control"placeholder="desc" [(ngModel)]="product.desc">
 			<label for="" style="padding: 10px 0 5px 0;">Sử Dụng Nhiên Liệu:</label>
 			<input type="text" name="fueltype" class="form-control"placeholder="fueltype" [(ngModel)]="product.fueltype">
   </div>
 			<!-- <button type="submit" class="btn btn-primary" >| Xác Nhận |</button> -->
-			<button type="button" (click)="updateProduct()" class="btn btn-secondary btn-lg btn-block"> Xác Nhận </button>
+			<button type="button" (click)="updateProduct()" routerLink="/admin/manager"style="width: 400px;margin: 0 auto;margin-top: 40px;" class="btn btn-secondary btn-lg btn-block"> Xác Nhận </button>
 	
 
 </div>
