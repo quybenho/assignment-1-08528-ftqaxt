@@ -28,8 +28,9 @@ const routes: Routes = [
       {path : "" , redirectTo: "dashboard", pathMatch: "full" },
       {path : "dashboard" , component: DashboardComponent},
       {path : "manager",component:  ProductManagerComponent},
-      {path : "add" , component: ProductAddComponent}
-    
+      {path : "add" , component: ProductAddComponent},
+      {path : "product/edit/:productID", component: ProductEditComponent}
+
     ]
   }
 
