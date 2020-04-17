@@ -18,7 +18,7 @@ const routes: Routes = [
   // { path: "product-manager", component: ProductManagerComponent },
   // { path: "product-add", component: ProductAddComponent },
   { path: "product-contact", component: ProductContactComponent },
-  // { path: "product/:productID", component: ProductDetailComponent },
+  { path: "product/:productID", component: ProductDetailComponent },
   // { path: "product/edit/:productID", component: ProductEditComponent },
   { path: "news", component: ProductNewsComponent },
   // { path: "**", component: NotFoundComponent },
