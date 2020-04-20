@@ -8,9 +8,8 @@
 		</nav>
 	</div></div>
 
-	<div class="row" style="margin-top: 50px;padding-right: 20px;padding-left: 20px;" >
-
-		<div ngClass="col-lg-4 col-md-6 mb-4" *ngFor="let product of products" style="" >
+	<div class="row" style="margin-top: 50px;padding-right: 20px;padding-left: 20px;" >   
+		<div ngClass="col-lg-4 col-md-6 mb-4" *ngFor="let product of products | slice: (page-1) * pageSize : (page-1) * pageSize + pageSize" style="" >
 			<div class="card h-100" >
 				<a><img class="card-img-top" routerLink="/product/{{product.id}}" [src]="product.image" alt=""></a>
 					<div class="card-body">
@@ -34,4 +33,8 @@
 			</div>
 		</div>
 	</div>
+  <div class="container" style="margin-left: 680px;margin-top: 25px;">
+<ngb-pagination   [(page)]="page" [pageSize]="pageSize" [collectionSize]="products.length" ></ngb-pagination>
+
+</div>
   <app-fotter></app-fotter>

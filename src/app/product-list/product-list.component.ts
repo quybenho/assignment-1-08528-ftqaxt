@@ -6,26 +6,14 @@ import { Product } from '../Product';
   selector: 'app-product-list',
   templateUrl: './product-list.component.html',
   styleUrls: ['./product-list.component.css'],
-  styles: [`
-    .star {
-      font-size: 1.5rem;
-      color: #b0c4de;
-    }
-    .filled {
-      color: #1e90ff;
-    }
-    .bad {
-      color: #deb0b0;
-    }
-    .filled.bad {
-      color: #ff1e1e;
-    }
-  `]
+ 
 })
 export class ProductListComponent implements OnInit {
   selected: Product;
   products: Product[];
   currentRate = 6;
+  page = 1;
+  pageSize = 7;
   constructor(
     private productService: ProductService
   ) { 

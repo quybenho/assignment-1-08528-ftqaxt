@@ -1,19 +1,17 @@
 <div id="content-wrapper" class="d-flex flex-column" style="margin-top:20px;margin-left:15px;">
-  <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">MANAGER</h1>
-            <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50" ></i> Generate Report</a>
-          </div>
+	<div class="d-sm-flex align-items-center justify-content-between mb-4">
+		<h1 class="h3 mb-0 text-gray-800">MANAGER</h1>
+		<a href="#"
+			class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50" ></i>
+			Generate Report</a>
+	</div>
 
 	<div id="content">
 	</div>
 </div>
-<div class="row" style="margin-right:5px;margin-left:5px;" >
-  
-  
-	
-
+<div class="row" style="margin-right:5px;margin-left:5px;">
 	<table class="table table-striped" style="margin-left:10px;margin-right:10px;">
-    
+
 		<thead class="thead-dark">
 			<tr>
 				<th scope="col">IMAGES</th>
@@ -28,12 +26,12 @@
 		<tbody>
 			<tr *ngFor="let product of products | slice: (page-1) * pageSize : (page-1) * pageSize + pageSize">
 
-				<td ><img width="2500px" height="300px" src="{{product.image}}" routerLink="/product/{{product.id}}" alt=""></td>
+				<td><img width="2500px" height="300px" src="{{product.image}}" routerLink="/product/{{product.id}}" alt=""></td>
 				<td>{{product.name  }}
-          <ngb-rating [(rate)]="currentRate"></ngb-rating>
-<hr>
-<pre>Rate: <b>{{currentRate}}</b></pre>
-        </td>
+					<ngb-rating [(rate)]="currentRate"></ngb-rating>
+					<hr>
+					<pre>Rate: <b>{{currentRate}}</b></pre>
+				</td>
 				<td>{{product.price}}</td>
 				<td>{{product.fueltype ? 'xăng': 'petrol'}}</td>
 				<td>{{product.desc}}</td>
@@ -44,12 +42,9 @@
 			</tr>
 		</tbody>
 	</table>
-  
+
 </div>
 <div class="container" style="margin-left: 680px;margin-top: 25px;">
-<ngb-pagination   [(page)]="page" [pageSize]="pageSize" [collectionSize]="products.length" ></ngb-pagination>
+	<ngb-pagination [(page)]="page" [pageSize]="pageSize" [collectionSize]="products.length"></ngb-pagination>
 
 </div>
-
-
-
